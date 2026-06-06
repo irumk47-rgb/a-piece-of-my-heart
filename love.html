@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To Fizza</title>
+
+<style>
+body{
+    background-color:#faf7ff;
+    font-family:Georgia, serif;
+    text-align:center;
+    padding:60px;
+    color:#444;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+}
+
+h1{
+    font-size:55px;
+}
+
+p{
+    font-size:24px;
+    line-height:1.9;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#result{
+    margin-top:25px;
+    font-size:28px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌙 Fizza 🌙</h1>
+
+<p>
+People come and go,
+but some people quietly become a part of your soul.
+</p>
+
+<p>
+You are not just my best friend.
+You are the person behind countless smiles,
+inside jokes,
+late-night conversations,
+and some of my favorite memories.
+</p>
+
+<p>
+If I had to describe you in one sentence,
+I would say:
+"Home isn't always a place; sometimes it's a person."
+</p>
+
+<p>
+And for me,
+that person is you. 🤍
+</p>
+
+<button onclick="message()">
+✨ One More Thing
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function message(){
+
+const messages = [
+
+"💖 Thank you for being my safe place.",
+
+"🌷 Life became better after you entered it.",
+
+"✨ Some friendships are temporary. Ours feels timeless.",
+
+"🤍 You are one of my greatest blessings.",
+
+"🌙 No matter what happens, you'll always matter to me.",
+
+"💌 My favorite human. Always."
+
+];
+
+document.getElementById("result").innerHTML =
+messages[Math.floor(Math.random() * messages.length)];
+
+}
+
+</script>
+
+</body>
+</html>
